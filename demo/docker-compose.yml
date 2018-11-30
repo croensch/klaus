@@ -1,0 +1,22 @@
+version: '3'
+services:
+  nginx-php:
+    image: amzn-nginx-php
+    volumes:
+      - ./resources/docker/nginx-php/sites.d:/etc/nginx/sites.d
+      - ./public:/var/www/public
+    ports:
+      - 8080:80
+    networks:
+      - src
+  php-fpm:
+    build:
+      dockerfile: ./resources/docker/php-fpm/Dockerfile
+      context: ./
+    volumes:
+      - ./:/var/www
+    networks:
+      - src
+networks:
+  src:
+    driver: bridge

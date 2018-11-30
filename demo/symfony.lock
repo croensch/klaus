@@ -1,0 +1,20 @@
+{
+    "symfony/flex": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "5f8a51c0fad684396f6b6c0fd770e043439cb632"
+        }
+    },
+    "symfony/requirements-checker": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "93d0ec48679f5e240d265088305c1ad775723f93"
+        }
+    }
+}
