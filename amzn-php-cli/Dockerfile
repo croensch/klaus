@@ -10,7 +10,7 @@ RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum-config-manager --enable remi-safe
 
 # exts like official php
-RUN yum install -y --enablerepo=remi-php72 php-pecl-libsodium
+RUN yum install -y --enablerepo=remi-php72 php-mbstring php-pecl-libsodium
 
 ENTRYPOINT ["php"]
 CMD ["-a"]
