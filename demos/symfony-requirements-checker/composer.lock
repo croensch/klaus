@@ -55,16 +55,16 @@
         },
         {
             "name": "symfony/requirements-checker",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/requirements-checker.git",
-                "reference": "c735f74734a296d301cc2ef9c3efe3a050266ef6"
+                "reference": "8151a5deeec2725693b37a5f409a26b2a8a4d5f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/requirements-checker/zipball/c735f74734a296d301cc2ef9c3efe3a050266ef6",
-                "reference": "c735f74734a296d301cc2ef9c3efe3a050266ef6",
+                "url": "https://api.github.com/repos/symfony/requirements-checker/zipball/8151a5deeec2725693b37a5f409a26b2a8a4d5f3",
+                "reference": "8151a5deeec2725693b37a5f409a26b2a8a4d5f3",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2018-11-12T14:14:21+00:00"
+            "time": "2018-12-22T08:23:45+00:00"
         }
     ],
     "packages-dev": [],

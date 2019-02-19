@@ -1,7 +1,7 @@
 version: '3'
 services:
   nginx-php:
-    image: amzn-nginx-php
+    image: croensch/amzn-nginx-php
     volumes:
       - ./resources/docker/nginx-php/sites.d:/etc/nginx/sites.d
       - ./public:/var/www/public
