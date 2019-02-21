@@ -1,4 +1,4 @@
-FROM amzn-python:latest
+FROM croensch/amzn-python
 
 COPY . /app
 WORKDIR /app
