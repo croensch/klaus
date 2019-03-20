@@ -1,5 +1,4 @@
-FROM node:10.13-alpine
-LABEL Author Carmine DiMascio <cdimascio@gmail.com>
+FROM croensch/amzn-node
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

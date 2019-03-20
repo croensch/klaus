@@ -1,2 +1,5 @@
 demos/symfony-requirements-checker/vendor/*
+demos/express-no-stress/node_modules/*
+demos/express-no-stress/dist
+demos/express-no-stress/.env
 tmp/*
