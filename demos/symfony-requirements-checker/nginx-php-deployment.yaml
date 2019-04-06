@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: nginx-php
+  name: nginx-php
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: nginx-php
+    spec:
+      containers:
+      - image: croensch/amzn-nginx-php
+        name: nginx-php
+        ports:
+        - containerPort: 80
+        resources: {}
+        volumeMounts:
+        - mountPath: /etc/nginx/sites.d
+          name: nginx-php-claim0
+        - mountPath: /var/www/public
+          name: nginx-php-claim1
+      restartPolicy: Always
+      volumes:
+      - name: nginx-php-claim0
+        persistentVolumeClaim:
+          claimName: nginx-php-claim0
+      - name: nginx-php-claim1
+        persistentVolumeClaim:
+          claimName: nginx-php-claim1
+status: {}

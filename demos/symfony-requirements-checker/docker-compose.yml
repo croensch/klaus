@@ -10,6 +10,7 @@ services:
     networks:
       - src
   php-fpm:
+    image: croensch/klaus-symfony-requirements-checker
     build:
       dockerfile: ./resources/docker/php-fpm/Dockerfile
       context: ./
