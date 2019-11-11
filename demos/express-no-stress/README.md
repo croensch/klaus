@@ -1,6 +1,6 @@
 # express-no-stress
 
-express no stress
+My cool app
 
 ## Get Started
 

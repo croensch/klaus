@@ -16,7 +16,7 @@ export class Controller {
     ExamplesService.create(req.body.name).then(r =>
       res
         .status(201)
-        .location(`<%= apiRoot %>/examples/${r.id}`)
+        .location(`/api/examples/${r.id}`)
         .json(r)
     );
   }
