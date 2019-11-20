@@ -1,7 +1,7 @@
 {
   "name": "express-no-stress",
   "version": "1.0.0",
-  "description": "express no stress",
+  "description": "My cool app",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -14,30 +14,30 @@
     "lint:fix": "eslint --fix -c .eslintrc.json {server,test}/**"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "pino": "^5.11.1",
-    "swagger-express-middleware": "^2.0.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pino": "^5.13.6",
+    "swagger-express-middleware": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.4",
-    "babel-eslint": "^10.0.1",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
-    "eslint": "^5.15.1",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4",
-    "mocha": "^6.0.2",
-    "nodemon": "^1.18.10",
-    "pino-pretty": "^2.5.0",
-    "supertest": "^3.4.2"
+    "eslint": "^6.6.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "pino-pretty": "^3.3.0",
+    "supertest": "^4.0.2"
   },
   "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
 }
