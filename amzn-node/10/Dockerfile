@@ -5,7 +5,8 @@ RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash - && \
     yum install -y nodejs yarn && \
     yum clean all
 
-#RUN touch ~/.bashrc && \
-#    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash && \
+# like official
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 CMD ["node"]
