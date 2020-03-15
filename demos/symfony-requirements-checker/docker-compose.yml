@@ -1,9 +1,10 @@
 version: '3'
 services:
   nginx-php:
-    image: croensch/amzn-nginx-php
+    build:
+      dockerfile: ./Dockerfile
+      context: ./resources/docker/nginx-php
     volumes:
-      - ./resources/docker/nginx-php/sites.d:/etc/nginx/sites.d
       - ./public:/var/www/public
     ports:
       - 8080:80
@@ -11,8 +12,8 @@ services:
       - src
   php-fpm:
     build:
-      dockerfile: ./resources/docker/php-fpm/Dockerfile
-      context: ./
+      dockerfile: ./Dockerfile
+      context: ./resources/docker/php-fpm
     volumes:
       - ./:/var/www
     networks:
