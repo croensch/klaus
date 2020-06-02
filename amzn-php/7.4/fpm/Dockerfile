@@ -10,7 +10,7 @@ RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum install -y yum-utils && \
     yum-config-manager --enable remi-safe && \
     yum install -y php-mbstring php-posix php-xml && \
-    yum install -y --enablerepo=remi-php74 php-pecl-libsodium && \
+    yum install -y --enablerepo=remi-php74 php-sodium && \
     yum clean --enablerepo=remi-php74 all
 
 # conf from official php and amazon
