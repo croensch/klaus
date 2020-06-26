@@ -9,9 +9,8 @@ RUN amazon-linux-extras install php7.1 && yum clean all
 RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum install -y yum-utils && \
     yum-config-manager --enable remi-safe && \
-    yum install -y php-mbstring php-posix php-xml && \
-    yum install -y --enablerepo=remi-php71 php-pecl-libsodium && \
-    yum clean --enablerepo=remi-php71 all
+    yum install -y php-mbstring php-posix php-xml php-pecl-libsodium && \
+    yum clean all
 
 COPY php.d/* /etc/php.d/
 

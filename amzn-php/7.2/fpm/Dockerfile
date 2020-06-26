@@ -9,9 +9,8 @@ RUN amazon-linux-extras install php7.2 && yum clean all
 RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum install -y yum-utils && \
     yum-config-manager --enable remi-safe && \
-    yum install -y php-mbstring php-posix php-xml && \
-    yum install -y --enablerepo=remi-php72 php-pecl-libsodium && \
-    yum clean --enablerepo=remi-php72 all
+    yum install -y php-mbstring php-posix php-xml php-sodium && \
+    yum clean all
 
 # conf from official php and amazon
 COPY php-fpm.conf /etc/php-fpm.conf
