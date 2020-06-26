@@ -15,7 +15,7 @@ RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
 COPY php.d/* /etc/php.d/
 
 # like official
-COPY docker-php-entrypoint /usr/local/bin/
+COPY docker-php-* /usr/local/bin/
 ENTRYPOINT ["docker-php-entrypoint"]
 
 CMD ["php", "-a"]

@@ -21,7 +21,7 @@ RUN ln -s /etc/php-fpm.conf /usr/local/etc/php-fpm.conf && \
     ln -s /etc/php-fpm.d /usr/local/etc/php-fpm.d
 
 # like official
-COPY docker-php-entrypoint /usr/local/bin/
+COPY docker-php-* /usr/local/bin/
 ENTRYPOINT ["docker-php-entrypoint"]
 
 EXPOSE 9000

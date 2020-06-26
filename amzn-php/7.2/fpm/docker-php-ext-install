@@ -1,0 +1,6 @@
+#!/bin/sh
+for ext in "$@"
+do
+    yum install --enablerepo=remi-php72 -y "php-$ext"
+done
+yum clean all
