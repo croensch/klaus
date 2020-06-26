@@ -1,3 +1,3 @@
 FROM croensch/amzn-php:fpm
 
-RUN yum install -y php-intl php-opcache
+RUN docker-php-ext-install intl opcache
