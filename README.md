@@ -23,10 +23,12 @@ server {
 
 ## node
 ### Tags
-* [`14`, `latest`](amzn-node/14/Dockerfile)
-* [`13`](amzn-node/13/Dockerfile)
+* [`16`, `latest`](amzn-node/16/Dockerfile)
+* [`15`](amzn-node/15/Dockerfile)
+* [`14`](amzn-node/14/Dockerfile)
+* [`13`](amzn-node/13/Dockerfile) EOL
 * [`12`](amzn-node/12/Dockerfile)
-* [`10`](amzn-node/10/Dockerfile)
+* [`10`](amzn-node/10/Dockerfile) EOL
 
 ## php
 ### Tags
