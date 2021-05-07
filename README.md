@@ -30,12 +30,14 @@ server {
 
 ## php
 ### Tags
-* [`7.4-cli`, `cli`, `latest`](amzn-php/7.3/cli/Dockerfile)
-* [`7.4-fpm`, `fpm`](amzn-php/7.3/fpm/Dockerfile)
+* [`8.0-cli`, `cli`, `latest`](amzn-php/7.3/cli/Dockerfile)
+* [`8.0-fpm`, `fpm`](amzn-php/7.3/fpm/Dockerfile)
+* [`7.4-cli`](amzn-php/7.3/cli/Dockerfile)
+* [`7.4-fpm`](amzn-php/7.3/fpm/Dockerfile)
 * [`7.3-cli`](amzn-php/7.3/cli/Dockerfile)
 * [`7.3-fpm`](amzn-php/7.3/fpm/Dockerfile)
-* [`7.2-cli`](amzn-php/7.2/cli/Dockerfile)
-* [`7.2-fpm`](amzn-php/7.2/fpm/Dockerfile)
+* [`7.2-cli`](amzn-php/7.2/cli/Dockerfile) EOL
+* [`7.2-fpm`](amzn-php/7.2/fpm/Dockerfile) EOL
 * [`7.1-cli`](amzn-php/7.1/cli/Dockerfile) EOL
 * [`7.1-fpm`](amzn-php/7.1/fpm/Dockerfile) EOL
 
