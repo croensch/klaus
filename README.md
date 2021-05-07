@@ -1,9 +1,9 @@
 ## nginx
 ### Tags
+* [`stable`](amzn-nginx/stable/Dockerfile) (1.18)
+* [`stable-php`](amzn-nginx/stable-php/Dockerfile) (1.18)
 * [`latest`](amzn-nginx/latest/Dockerfile) (1.16)
 * [`latest-php`](amzn-nginx/latest-php/Dockerfile) (1.16)
-* [`stable`](amzn-nginx/stable/Dockerfile) (1.12) EOL
-* [`stable-php`](amzn-nginx/stable-php/Dockerfile) (1.12) EOL
 ### Info
 Default www-root: `/usr/share/nginx/html`.
 Server in `/etc/nginx/nginx.conf`, but overwrite in `/etc/nginx/conf.d/default.conf`.
