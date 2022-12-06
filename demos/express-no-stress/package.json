@@ -14,12 +14,12 @@
     "lint:fix": "eslint --fix -c .eslintrc.json {server,test}/**"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "pino": "^5.13.6",
-    "swagger-express-middleware": "^2.0.4"
+    "swagger-express-middleware": "^4.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
