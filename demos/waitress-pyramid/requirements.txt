@@ -1,3 +1,4 @@
 waitress==1.4.3
 pyramid==1.10.1
 paste==3.0.6
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
